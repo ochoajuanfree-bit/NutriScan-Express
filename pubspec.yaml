@@ -1,0 +1,70 @@
+name: nutriscan_express
+description: "ASISTENTE PERSONAL DE SALUD PARA EVALUACION NUTRICIONAL EN TIEMPO REAL CON FLUTTER"
+
+# EVITA LA PUBLICACION ACCIDENTAL DEL PAQUETE EN PUB.DEV
+publish_to: "none"
+
+# NUMERO DE VERSION Y NUMERO DE COMPILACION DE LA APLICACION
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+# DEPENDENCIAS DEL PROYECTO
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # PAQUETE OFICIAL DE ESCANEO DE CODIGOS DE BARRA CON CAMARA Y ML KIT
+  mobile_scanner: ^5.2.3
+
+  # MOTOR DE BASE DE DATOS LOCAL SQLITE
+  sqflite: ^2.4.1
+
+  # UTILIDADES DE RUTAS PARA GESTION DE ARCHIVOS Y BASES DE DATOS
+  path: ^1.9.0
+
+  # CLIENTE HTTP PARA CONSULTAS A LA API DE OPEN FOOD FACTS
+  http: ^1.2.0
+
+  # ICONOS DE ESTILO IOS (OPCIONAL)
+  cupertino_icons: ^1.0.8
+
+  # GENERACION DE DOCUMENTOS PDF Y FORMATOS IMPRIMIBLES
+  pdf: ^3.13.1
+
+  # MOTOR NATIVO DE IMPRESION Y COMPARTICION DE ARCHIVOS PDF
+  printing: ^5.15.1
+
+  # ACCESO A DIRECTORIOS NATIVOS DEL DISPOSITIVO MOVIL PARA GUARDAR ARCHIVOS
+  path_provider: ^2.1.6
+
+# DEPENDENCIAS DE DESARROLLO Y REGLAS DE ANALISIS DE CODIGO
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # REGLAS RECOMENDADAS DE BUENAS PRACTICAS DE FLUTTER
+  flutter_lints: ^6.0.0
+
+  # HERRAMIENTA PARA GENERAR EL ICONO DE LANZAMIENTO PERSONALIZADO EN ANDROID E IOS
+  flutter_launcher_icons: ^0.13.1
+
+# CONFIGURACION DEL ICONO PERSONALIZADO DE LA APLICACION (LAUNCHER ICON)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icono/icono_app.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#004D40"
+  adaptive_icon_foreground: "assets/icono/icono_app.png"
+
+# CONFIGURACION ESPECIFICA DE FLUTTER
+flutter:
+  # HABILITA EL USO DE FUENTES E ICONOS DE MATERIAL DESIGN
+  uses-material-design: true
+
+  # DECLARACION DE CARPETAS DE ACTIVOS GRAFICOS E ICONO DE LA APLICACION
+  assets:
+    - assets/icono/
+    - assets/icono/icono_app.png

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NutriScan Express - Marcadores de Prueba Oficiales</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+    .header {
+      text-align: center;
+      padding-bottom: 24px;
+      border-bottom: 3px solid #004d40;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      color: #004d40;
+      margin: 0;
+      font-size: 28px;
+    }
+    .header p {
+      color: #64748b;
+      margin: 6px 0 0 0;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .badge-snack { background: #fef3c7; color: #b45309; }
+    .badge-drink { background: #fee2e2; color: #b91c1c; }
+    .badge-cookie { background: #f3e8ff; color: #6b21a8; }
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0f172a;
+      margin: 0 0 8px 0;
+    }
+    .barcode-svg {
+      width: 100%;
+      max-width: 250px;
+      height: 90px;
+      margin: 16px auto;
+      display: block;
+    }
+    .code-text {
+      font-family: monospace;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #0f172a;
+      background: #f1f5f9;
+      padding: 6px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    .table-nutri {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      text-align: left;
+      margin-top: 10px;
+    }
+    .table-nutri th, .table-nutri td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .table-nutri th {
+      color: #64748b;
+      font-weight: 600;
+    }
+    .stamps {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+    }
+    .stamp {
+      background: #000;
+      color: #fff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      border: 1px solid #dc2626;
+    }
+    .instructions {
+      margin-top: 40px;
+      background: #e0f2f1;
+      border: 1px solid #80cbc4;
+      border-radius: 12px;
+      padding: 18px;
+      font-size: 13px;
+      color: #004d40;
+    }
+    .instructions h3 {
+      margin-top: 0;
+      color: #004d40;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .card { box-shadow: none; border: 1px solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>NutriScan Express</h1>
+    <p>Carpeta de Recursos de Prueba - Marcadores para Escaneo de Alimentos</p>
+    <p><strong>Asignatura:</strong> Profesional Complementaria II | <strong>Tecnología:</strong> Flutter & SQLite</p>
+  </div>
+
+  <div class="grid">
+    <!-- PRODUCTO 1 -->
+    <div class="card">
+      <span class="badge badge-snack">Snack / Fritura</span>
+      <h2 class="product-title">Papas Margarita Natural 25g</h2>
+      
+      <!-- CODIGO DE BARRAS SVG EAN-13: 7702189000019 -->
+      <svg class="barcode-svg" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="70" fill="#ffffff"/>
+        <!-- LINEAS DE BARRAS GENERADAS PARA 7702189000019 -->
+        <g fill="#000000">
+          <rect x="10" y="5" width="2" height="50"/>
+          <rect x="14" y="5" width="2" height="50"/>
+          <rect x="18" y="5" width="1" height="45"/>
+          <rect x="22" y="5" width="3" height="45"/>
+          <rect x="28" y="5" width="1" height="45"/>
+          <rect x="32" y="5" width="2" height="45"/>
+          <rect x="36" y="5" width="4" height="45"/>
+          <rect x="42" y="5" width="1" height="45"/>
+          <rect x="46" y="5" width="2" height="45"/>
+          <rect x="52" y="5" width="3" height="45"/>
+          <rect x="58" y="5" width="2" height="45"/>
+          <rect x="64" y="5" width="1" height="45"/>
+          <rect x="68" y="5" width="4" height="45"/>
+          <rect x="74" y="5" width="2" height="45"/>
+          <rect x="80" y="5" width="1" height="45"/>
+          <rect x="84" y="5" width="3" height="45"/>
+          <rect x="90" y="5" width="2" height="45"/>
+          <rect x="94" y="5" width="2" height="50"/>
+          <rect x="98" y="5" width="2" height="50"/>
+          <rect x="104" y="5" width="2" height="45"/>
+          <rect x="110" y="5" width="1" height="45"/>
+          <rect x="114" y="5" width="3" height="45"/>
+          <rect x="120" y="5" width="2" height="45"/>
+          <rect x="126" y="5" width="2" height="45"/>
+          <rect x="132" y="5" width="1" height="45"/>
+          <rect x="136" y="5" width="3" height="45"/>
+          <rect x="142" y="5" width="2" height="45"/>
+          <rect x="148" y="5" width="2" height="45"/>
+          <rect x="154" y="5" width="1" height="45"/>
+          <rect x="158" y="5" width="4" height="45"/>
+          <rect x="166" y="5" width="1" height="45"/>
+          <rect x="170" y="5" width="2" height="45"/>
+          <rect x="176" y="5" width="3" height="45"/>
+          <rect x="182" y="5" width="2" height="50"/>
+          <rect x="186" y="5" width="2" height="50"/>
+        </g>
+        <text x="100" y="65" font-family="monospace" font-size="10" text-anchor="middle" fill="#000000">7 702189 000019</text>
+      </svg>
+      <div class="code-text">7702189000019</div>
+
+      <table class="table-nutri">
+        <tr><th>Parámetro</th><th>Valor Real</th></tr>
+        <tr><td>Calorías</td><td><strong>540.0 kcal</strong></td></tr>
+        <tr><td>Sodio</td><td><strong>490.0 mg</strong> (Crítico)</td></tr>
+        <tr><td>Azúcares</td><td>1.0 g</td></tr>
+        <tr><td>Prueba Médica</td><td><strong>Alerta en Hipertensión</strong></td></tr>
+      </table>
+
+      <div class="stamps">
+        <span class="stamp">EXCESO EN SODIO</span>
+        <span class="stamp">EXCESO EN GRASAS</span>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 2 -->
+    <div class="card">
+      <span class="badge badge-drink">Bebida Azucarada</span>
+      <h2 class="product-title">Gaseosa Coca-Cola Original 400ml</h2>
+
+      <!-- CODIGO DE BARRAS SVG EAN-13: 5449000000996 -->
+      <svg class="barcode-svg" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="70" fill="#ffffff"/>
+        <!-- LINEAS DE BARRAS GENERADAS PARA 5449000000996 -->
+        <g fill="#000000">
+          <rect x="10" y="5" width="2" height="50"/>
+          <rect x="14" y="5" width="2" height="50"/>
+          <rect x="19" y="5" width="2" height="45"/>
+          <rect x="23" y="5" width="1" height="45"/>
+          <rect x="27" y="5" width="3" height="45"/>
+          <rect x="33" y="5" width="2" height="45"/>
+          <rect x="37" y="5" width="2" height="45"/>
+          <rect x="43" y="5" width="1" height="45"/>
+          <rect x="47" y="5" width="3" height="45"/>
+          <rect x="53" y="5" width="2" height="45"/>
+          <rect x="59" y="5" width="1" height="45"/>
+          <rect x="63" y="5" width="3" height="45"/>
+          <rect x="69" y="5" width="2" height="45"/>
+          <rect x="75" y="5" width="1" height="45"/>
+          <rect x="79" y="5" width="2" height="45"/>
+          <rect x="85" y="5" width="3" height="45"/>
+          <rect x="91" y="5" width="1" height="45"/>
+          <rect x="94" y="5" width="2" height="50"/>
+          <rect x="98" y="5" width="2" height="50"/>
+          <rect x="103" y="5" width="2" height="45"/>
+          <rect x="109" y="5" width="1" height="45"/>
+          <rect x="113" y="5" width="3" height="45"/>
+          <rect x="119" y="5" width="2" height="45"/>
+          <rect x="125" y="5" width="2" height="45"/>
+          <rect x="131" y="5" width="1" height="45"/>
+          <rect x="135" y="5" width="3" height="45"/>
+          <rect x="141" y="5" width="2" height="45"/>
+          <rect x="147" y="5" width="2" height="45"/>
+          <rect x="153" y="5" width="1" height="45"/>
+          <rect x="159" y="5" width="3" height="45"/>
+          <rect x="165" y="5" width="2" height="45"/>
+          <rect x="171" y="5" width="2" height="45"/>
+          <rect x="177" y="5" width="1" height="45"/>
+          <rect x="182" y="5" width="2" height="50"/>
+          <rect x="186" y="5" width="2" height="50"/>
+        </g>
+        <text x="100" y="65" font-family="monospace" font-size="10" text-anchor="middle" fill="#000000">5 449000 000996</text>
+      </svg>
+      <div class="code-text">5449000000996</div>
+
+      <table class="table-nutri">
+        <tr><th>Parámetro</th><th>Valor Real</th></tr>
+        <tr><td>Calorías</td><td><strong>180.0 kcal</strong></td></tr>
+        <tr><td>Azúcares</td><td><strong>45.0 g</strong> (Crítico)</td></tr>
+        <tr><td>Sodio</td><td>35.0 mg</td></tr>
+        <tr><td>Prueba Médica</td><td><strong>Alerta en Diabetes</strong></td></tr>
+      </table>
+
+      <div class="stamps">
+        <span class="stamp">EXCESO EN AZÚCARES</span>
+        <span class="stamp">EDULCORANTES</span>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="card">
+      <span class="badge badge-cookie">Galletas y Dulces</span>
+      <h2 class="product-title">Galletas Festival Chocolate 403g</h2>
+
+      <!-- CODIGO DE BARRAS SVG EAN-13: 7702025102032 -->
+      <svg class="barcode-svg" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="70" fill="#ffffff"/>
+        <!-- LINEAS DE BARRAS GENERADAS PARA 7702025102032 -->
+        <g fill="#000000">
+          <rect x="10" y="5" width="2" height="50"/>
+          <rect x="14" y="5" width="2" height="50"/>
+          <rect x="18" y="5" width="1" height="45"/>
+          <rect x="22" y="5" width="3" height="45"/>
+          <rect x="28" y="5" width="2" height="45"/>
+          <rect x="34" y="5" width="1" height="45"/>
+          <rect x="38" y="5" width="3" height="45"/>
+          <rect x="44" y="5" width="2" height="45"/>
+          <rect x="50" y="5" width="1" height="45"/>
+          <rect x="54" y="5" width="2" height="45"/>
+          <rect x="60" y="5" width="3" height="45"/>
+          <rect x="66" y="5" width="2" height="45"/>
+          <rect x="72" y="5" width="1" height="45"/>
+          <rect x="76" y="5" width="3" height="45"/>
+          <rect x="82" y="5" width="2" height="45"/>
+          <rect x="88" y="5" width="2" height="45"/>
+          <rect x="94" y="5" width="2" height="50"/>
+          <rect x="98" y="5" width="2" height="50"/>
+          <rect x="104" y="5" width="2" height="45"/>
+          <rect x="110" y="5" width="1" height="45"/>
+          <rect x="114" y="5" width="3" height="45"/>
+          <rect x="120" y="5" width="2" height="45"/>
+          <rect x="126" y="5" width="1" height="45"/>
+          <rect x="130" y="5" width="3" height="45"/>
+          <rect x="136" y="5" width="2" height="45"/>
+          <rect x="142" y="5" width="2" height="45"/>
+          <rect x="148" y="5" width="1" height="45"/>
+          <rect x="152" y="5" width="3" height="45"/>
+          <rect x="158" y="5" width="2" height="45"/>
+          <rect x="164" y="5" width="1" height="45"/>
+          <rect x="168" y="5" width="4" height="45"/>
+          <rect x="176" y="5" width="2" height="45"/>
+          <rect x="182" y="5" width="2" height="50"/>
+          <rect x="186" y="5" width="2" height="50"/>
+        </g>
+        <text x="100" y="65" font-family="monospace" font-size="10" text-anchor="middle" fill="#000000">7 702025 102032</text>
+      </svg>
+      <div class="code-text">7702025102032</div>
+
+      <table class="table-nutri">
+        <tr><th>Parámetro</th><th>Valor Real</th></tr>
+        <tr><td>Calorías</td><td><strong>490.0 kcal</strong></td></tr>
+        <tr><td>Azúcares</td><td><strong>38.0 g</strong> (Crítico)</td></tr>
+        <tr><td>Sodio</td><td>220.0 mg</td></tr>
+        <tr><td>Prueba Médica</td><td><strong>Alerta en Celiaquía y Lactosa</strong></td></tr>
+      </table>
+
+      <div class="stamps">
+        <span class="stamp">EXCESO EN AZÚCARES</span>
+        <span class="stamp">EXCESO EN GRASAS</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h3>Instrucciones de Prueba para la Sustentación</h3>
+    <ol>
+      <li><strong>Escaneo con Cámara:</strong> Abre la aplicación NutriScan Express en tu teléfono físico o emulador, presiona <em>ESCANEAR PRODUCTO (CÁMARA IA)</em> y apunta la cámara a cualquiera de los 3 códigos de barras mostrados arriba en pantalla o impresos.</li>
+      <li><strong>Ingreso Manual / Marcadores:</strong> Si estás usando un emulador sin cámara o deseas una prueba rápida, en la esquina superior derecha del escáner pulsa el ícono de <em>Marcadores</em> o el ícono de <em>Teclado</em> para seleccionar o digitar el código exacto.</li>
+      <li><strong>Prueba del Semáforo y Perfil de Salud:</strong> Ve a <em>MI PERFIL DE SALUD</em> en la app, activa la condición médica correspondiente (ej: Hipertensión para Papas Margarita, o Diabetes para Coca-Cola) y observa cómo el semáforo cambia inmediatamente a <strong>🔴 NO RECOMENDADO</strong> justificando el riesgo médico.</li>
+      <li><strong>Imprimir a PDF:</strong> Puedes imprimir este documento directamente presionando <code>Ctrl + P</code> en tu navegador y seleccionando "Guardar como PDF".</li>
+    </ol>
+  </div>
+
+</body>
+</html>
